@@ -1,3 +1,4 @@
+
 # pipe-logger
 
 Ruby ~~Bash~~ script for easy log rotation and formatting
@@ -16,5 +17,11 @@ chatty_process | pipe-logger -s 100m -n 5 -t chatty.log
 
 # Standard output & error with process substitution
 chatty_process > >(pipe-logger chatty.out) 2> >(pipe-logger chatty.err)
+```
+
+## Installation
+
+```sh
+brew install pipe-logger
 ```
 
